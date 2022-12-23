@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>System Administrator Dashboard - Iloilo Doctor's College</title>
+    <title>System Administrator Dashboard | Open Semester - Iloilo Doctor's College</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
@@ -84,7 +84,7 @@
                 </li>
                 <li class="side-item-header">Menu</li>
                 <li class="side-item">
-                    <a class="side-link active" href="index.html">
+                    <a class="side-link" href="index.html">
                         <span class="material-symbols-rounded">dashboard</span>
                         <span class="side-text">Dashboard</span>
                     </a>
@@ -97,7 +97,7 @@
                 </li>
                 <li class="side-item-header">Admin</li>
                 <li class="side-item">
-                    <a class="side-link" href="#">
+                    <a class="side-link active" href="#">
                         <div class="me-auto d-flex align-items-center gap-2">
                             <span class="material-symbols-rounded">school</span>
                             <span class="side-text">Master Settings</span>
@@ -107,7 +107,7 @@
                     
                     <div class="side-menu-collapse">
                         <a href="school-settings.html" class="collapse-item">School Settings</a>
-                        <a href="open-semester.html" class="collapse-item">Open Semester</a>
+                        <a href="open-semester.html" class="collapse-item active">Open Semester</a>
                         <a href="open-enrollment.html" class="collapse-item">Open Enrollment</a>
                         <a href="reset-student-password.html" class="collapse-item">Reset Student Password</a>
                         <a href="student-login-settings.html" class="collapse-item">Student Login Settings</a>
@@ -230,82 +230,84 @@
                 <div class="bread">
                     <ol class="bread-menu">
                         <li class="bread-item">
-                            <a href="#" class="bread-link">Dashboard</a>
+                            <a href="index.html" class="bread-link">Dashboard</a>
                         </li>
                         <li class="bread-item">
-                            <a href="#" class="bread-link" aria-current="page">Boarding</a>
+                            <a href="#" class="bread-link">Master Settings</a>
+                        </li>
+                        <li class="bread-item">
+                            <span class="bread-link" aria-current="page">Open Semester</span>
                         </li>
                     </ol>
-                    <h4>Hi, Midan, Fo Lhocos (Admin)</h4>
+                    <h4>Open Semester</h4>
                 </div>
                 <div class="row g-3 mt-4">
-                    <div class="col-xl-3">
-                        <a href="officially-enrolled.html">
-                            <div class="card">
-                                <div class="body">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="initial-circle-md background-accent-primary">
-                                            <span class="material-symbols-rounded text-color-primary">perm_identity</span>
-                                        </div>
-                                        <div class="details">
-                                            <div class="font-size-18 font-weight-600">2906</div>
-                                            <div class="font-size-13">Officially Enrolled</div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="col-xl-12">
+                        <div class="background-accent-warning round py-4 px-4 d-flex align-items-start gap-3 shadow-sm">
+                            <div class="initial-circle-md circle background-color-warning">
+                                <span class="material-symbols-rounded">priority_high</span>
                             </div>
-                        </a>
+                            <div class="me-auto">
+                                <div class="font-size-20 font-weight-600">Note</div>
+                                <div class="font-size-14">Use is the Current Semester and School Year of the system. Checked from the option and click "Set as Current Semester" button to update. Enrollment can only be open and close in the current open semester. Changing open semester will close the enrollment in the previous.</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xl-3">
-                        <a href="registrar-verified.html">
-                            <div class="card">
-                                <div class="body">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="initial-circle-md background-accent-danger">
-                                            <span class="material-symbols-rounded text-color-danger">article</span>
-                                        </div>
-                                        <div class="details">
-                                            <div class="font-size-18 font-weight-600">1132</div>
-                                            <div class="font-size-13">Registrar Verified</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="col-xl-12">
+                        <div class="d-flex align-items-center justify-content-between gap-2">
+                            <a href="#" class="button-primary"><span class="material-symbols-rounded">add</span> New Open Semester</a>
+                        </div>
                     </div>
-                    <div class="col-xl-3">
-                        <a href="enrollees.html">
-                            <div class="card">
-                                <div class="body">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="initial-circle-md background-accent-warning">
-                                            <span class="material-symbols-rounded">group</span>
-                                        </div>
-                                        <div class="details">
-                                            <div class="font-size-18 font-weight-600">0</div>
-                                            <div class="font-size-13">Enrollees</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-3">
-                        <a href="applicants.html">
-                            <div class="card">
-                                <div class="body">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="initial-circle-md background-accent-success">
-                                            <span class="material-symbols-rounded text-color-success">chair_alt</span>
-                                        </div>
-                                        <div class="details">
-                                            <div class="font-size-18 font-weight-600">1</div>
-                                            <div class="font-size-13">Applicants</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="col-xl-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered background-color-card mb-0">
+                                <thead>
+                                    <tr>
+                                        <th width="12%">Use</th>
+                                        <th>Academic Year</th>
+                                        <th>Semester</th>
+                                        <th>Is Enrollment Open?</th>
+                                        <th class="text-center" width="12%">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-highlighted">
+                                        <td>
+                                            <div class="form-check d-flex align-content-center gap-2">
+                                                <input class="form-check-input" type="radio" id="prelim" checked>
+                                                <label class="form-check-label" for="prelim">Current</label>
+                                            </div>
+                                        </td>
+                                        <td>2021-2021</td>
+                                        <td>1st</td>
+                                        <td>Open</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center gap-2">
+                                                <button type="button" class="button-secondary"><span class="material-symbols-rounded">edit</span> Edit</button>
+                                                <button type="button" class="button-accent-danger"><span class="material-symbols-rounded">delete</span> Destroy</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check d-flex align-content-center gap-2">
+                                                <input class="form-check-input" type="radio" id="midterm">
+                                                <label class="form-check-label" for="midterm"></label>
+                                            </div>
+                                        </td>
+                                        <td>2020-2021</td>
+                                        <td>3rd Semester</td>
+                                        <td>Close</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center gap-2">
+                                                <button type="button" class="button-secondary"><span class="material-symbols-rounded">edit</span> Edit</button>
+                                                <button type="button" class="button-accent-danger"><span class="material-symbols-rounded">delete</span> Destroy</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>

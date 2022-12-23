@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>System Administrator Dashboard - Iloilo Doctor's College</title>
+    <title>System Administrator Dashboard | School Settings - Iloilo Doctor's College</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
@@ -84,7 +84,7 @@
                 </li>
                 <li class="side-item-header">Menu</li>
                 <li class="side-item">
-                    <a class="side-link active" href="index.html">
+                    <a class="side-link" href="index.html">
                         <span class="material-symbols-rounded">dashboard</span>
                         <span class="side-text">Dashboard</span>
                     </a>
@@ -97,7 +97,7 @@
                 </li>
                 <li class="side-item-header">Admin</li>
                 <li class="side-item">
-                    <a class="side-link" href="#">
+                    <a class="side-link active" href="#">
                         <div class="me-auto d-flex align-items-center gap-2">
                             <span class="material-symbols-rounded">school</span>
                             <span class="side-text">Master Settings</span>
@@ -106,7 +106,7 @@
                     </a>
                     
                     <div class="side-menu-collapse">
-                        <a href="school-settings.html" class="collapse-item">School Settings</a>
+                        <a href="school-settings.html" class="collapse-item active">School Settings</a>
                         <a href="open-semester.html" class="collapse-item">Open Semester</a>
                         <a href="open-enrollment.html" class="collapse-item">Open Enrollment</a>
                         <a href="reset-student-password.html" class="collapse-item">Reset Student Password</a>
@@ -230,82 +230,142 @@
                 <div class="bread">
                     <ol class="bread-menu">
                         <li class="bread-item">
-                            <a href="#" class="bread-link">Dashboard</a>
+                            <a href="index.html" class="bread-link">Dashboard</a>
                         </li>
                         <li class="bread-item">
-                            <a href="#" class="bread-link" aria-current="page">Boarding</a>
+                            <a href="#" class="bread-link">Master Settings</a>
+                        </li>
+                        <li class="bread-item">
+                            <span class="bread-link" aria-current="page">School Settings</span>
                         </li>
                     </ol>
-                    <h4>Hi, Midan, Fo Lhocos (Admin)</h4>
+                    <h4>Configure Settings</h4>
                 </div>
                 <div class="row g-3 mt-4">
-                    <div class="col-xl-3">
-                        <a href="officially-enrolled.html">
-                            <div class="card">
-                                <div class="body">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="initial-circle-md background-accent-primary">
-                                            <span class="material-symbols-rounded text-color-primary">perm_identity</span>
-                                        </div>
-                                        <div class="details">
-                                            <div class="font-size-18 font-weight-600">2906</div>
-                                            <div class="font-size-13">Officially Enrolled</div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="body">
+                                <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut ratione nihil perferendis libero rem, porro sint ullam facilis molestias dolores doloribus doloremque culpa. Quisquam facilis quod, officia reiciendis doloremque voluptatum!</div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-xl-3">
-                        <a href="registrar-verified.html">
-                            <div class="card">
-                                <div class="body">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="initial-circle-md background-accent-danger">
-                                            <span class="material-symbols-rounded text-color-danger">article</span>
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="body">
+                                <form action="">
+                                    <div class="row g-3">
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-name" class="form-label">School Name</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
                                         </div>
-                                        <div class="details">
-                                            <div class="font-size-18 font-weight-600">1132</div>
-                                            <div class="font-size-13">Registrar Verified</div>
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-fullname" class="form-label">School Fullname</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Address</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Telephone</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Email Address</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">Tag Name</label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="form-text">Will appear at the top navigation bar beside school name</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">Tag Color</label>
+                                                <input type="color" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School President Name</label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="form-text">Name of school president</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Principal Name</label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="form-text">Name of school principal</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Principal Position</label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="form-text">Name of school principal position</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Accountant / Cashier Head Name </label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="form-text">Name of school accountant</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Accountant Position</label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="form-text">Name of school accountant position</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Registrar Name</label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="form-text">Name of school registrar</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Registrar Position</label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="form-text">Name of school registrar position</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Cashier Name</label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="form-text">Name of school coordinator</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Logo: (JPG and PNG only) (Ideal Size 238 x 84)</label>
+                                                <input type="file" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <button type="submit" class="button-primary">Update Changes</button>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-3">
-                        <a href="enrollees.html">
-                            <div class="card">
-                                <div class="body">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="initial-circle-md background-accent-warning">
-                                            <span class="material-symbols-rounded">group</span>
-                                        </div>
-                                        <div class="details">
-                                            <div class="font-size-18 font-weight-600">0</div>
-                                            <div class="font-size-13">Enrollees</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-3">
-                        <a href="applicants.html">
-                            <div class="card">
-                                <div class="body">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="initial-circle-md background-accent-success">
-                                            <span class="material-symbols-rounded text-color-success">chair_alt</span>
-                                        </div>
-                                        <div class="details">
-                                            <div class="font-size-18 font-weight-600">1</div>
-                                            <div class="font-size-13">Applicants</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>

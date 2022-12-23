@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>System Administrator Dashboard - Iloilo Doctor's College</title>
+    <title>System Administrator Dashboard | ID Code Settings - Iloilo Doctor's College</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
@@ -84,7 +84,7 @@
                 </li>
                 <li class="side-item-header">Menu</li>
                 <li class="side-item">
-                    <a class="side-link active" href="index.html">
+                    <a class="side-link" href="index.html">
                         <span class="material-symbols-rounded">dashboard</span>
                         <span class="side-text">Dashboard</span>
                     </a>
@@ -97,7 +97,7 @@
                 </li>
                 <li class="side-item-header">Admin</li>
                 <li class="side-item">
-                    <a class="side-link" href="#">
+                    <a class="side-link active" href="#">
                         <div class="me-auto d-flex align-items-center gap-2">
                             <span class="material-symbols-rounded">school</span>
                             <span class="side-text">Master Settings</span>
@@ -111,7 +111,7 @@
                         <a href="open-enrollment.html" class="collapse-item">Open Enrollment</a>
                         <a href="reset-student-password.html" class="collapse-item">Reset Student Password</a>
                         <a href="student-login-settings.html" class="collapse-item">Student Login Settings</a>
-                        <a href="id-code-settings.html" class="collapse-item">ID Code Settings</a>
+                        <a href="id-code-settings.html" class="collapse-item active">ID Code Settings</a>
                         <a href="system-activity-logs.html" class="collapse-item">System Activity Logs</a>
                     </div>
                 </li>
@@ -230,82 +230,57 @@
                 <div class="bread">
                     <ol class="bread-menu">
                         <li class="bread-item">
-                            <a href="#" class="bread-link">Dashboard</a>
+                            <a href="index.html" class="bread-link">Dashboard</a>
                         </li>
                         <li class="bread-item">
-                            <a href="#" class="bread-link" aria-current="page">Boarding</a>
+                            <a href="#" class="bread-link">Master Settings</a>
+                        </li>
+                        <li class="bread-item">
+                            <span class="bread-link" aria-current="page">ID Code Settings</span>
                         </li>
                     </ol>
-                    <h4>Hi, Midan, Fo Lhocos (Admin)</h4>
+                    <h4>Student ID Code Management</h4>
                 </div>
                 <div class="row g-3 mt-4">
-                    <div class="col-xl-3">
-                        <a href="officially-enrolled.html">
-                            <div class="card">
-                                <div class="body">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="initial-circle-md background-accent-primary">
-                                            <span class="material-symbols-rounded text-color-primary">perm_identity</span>
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="body">
+                                <div class="font-size-18 font-weight-600 mb-3">Overall College ID Code</div>
+                                <form action="">
+                                    <div class="row g-3">
+                                        <div class="col-xl-10">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" value="20-C-0011" required>
+                                            </div>
                                         </div>
-                                        <div class="details">
-                                            <div class="font-size-18 font-weight-600">2906</div>
-                                            <div class="font-size-13">Officially Enrolled</div>
+                                        <div class="col-xl-2">
+                                            <button type="submit" class="button-primary block">Save Changes</button>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-xl-3">
-                        <a href="registrar-verified.html">
-                            <div class="card">
-                                <div class="body">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="initial-circle-md background-accent-danger">
-                                            <span class="material-symbols-rounded text-color-danger">article</span>
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="body">
+                                <div class="font-size-18 font-weight-600 mb-3">Generate Student ID</div>
+                                <form action="">
+                                    <div class="row g-3">
+                                        <div class="col-xl-10">
+                                            <div class="form-group">
+                                                <select class="form-control" required>
+                                                    <option disabled selected>-- Select Program --</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                        <div class="details">
-                                            <div class="font-size-18 font-weight-600">1132</div>
-                                            <div class="font-size-13">Registrar Verified</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-3">
-                        <a href="enrollees.html">
-                            <div class="card">
-                                <div class="body">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="initial-circle-md background-accent-warning">
-                                            <span class="material-symbols-rounded">group</span>
-                                        </div>
-                                        <div class="details">
-                                            <div class="font-size-18 font-weight-600">0</div>
-                                            <div class="font-size-13">Enrollees</div>
+                                        <div class="col-xl-2">
+                                            <button type="submit" class="button-primary block">Generate</button>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-3">
-                        <a href="applicants.html">
-                            <div class="card">
-                                <div class="body">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="initial-circle-md background-accent-success">
-                                            <span class="material-symbols-rounded text-color-success">chair_alt</span>
-                                        </div>
-                                        <div class="details">
-                                            <div class="font-size-18 font-weight-600">1</div>
-                                            <div class="font-size-13">Applicants</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
